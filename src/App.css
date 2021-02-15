@@ -1,38 +1,152 @@
-.App {
+/* This styling was a exercise of grid. I wanted to try it but after trying it, I believe this project
+ didn't really needed grid. Instead I should've stick to the block display, it could've been faster.  */
+
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+html {
+  background-color: #ffee24;
+  background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+}
+a {
+  text-decoration: none;
+}
+button {
+  outline: none;
+  font-size: large;
+  font-family: "Press Start 2P", cursive;
+}
+button:hover {
+  opacity: 50%;
+  background-color: black;
+  color: aliceblue;
+}
+.spanForBackground1 {
+  grid-row: bottomRow;
+  grid-column: leftMostCol/-1;
+  background-color: black;
+  opacity: 90%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.spanForBackground2 {
+  grid-row: calculation/-1;
+  grid-column: leftMostCol;
+  background-color: black;
+  opacity: 90%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.spanForBackground3 {
+  grid-row: calculation/-1;
+  grid-column: rightMostCol;
+  background-color: black;
+  opacity: 90%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.calculator {
+  display: grid;
+  margin: auto;
+  width: 20rem;
+  grid-template-columns: [leftMostCol]10px [firstCol]75px [secondCol]75px [thirdCol]75px [fourthCol]75px [rightMostCol]10px;
+  grid-template-rows: [calculation]30px [numberAndAnswer]50px [clearRow]75px [sevenRow]75px [fourRow]75px [oneRow]75px [zeroRow]75px [bottomRow]10px;
+}
+#calculationArea {
+  font-family: "Press Start 2P", cursive;
+  grid-row: calculation/clearRow;
+  grid-column: firstCol/rightMostCol;
+  background-color: black;
+  opacity: 90%;
+  text-align: right;
+}
+#currentCalculation {
+  color: aliceblue;
+}
+#currentPressedButton {
+  color: aliceblue;
+}
+#clear {
+  grid-column: firstCol/thirdCol;
+  grid-row: clearRow;
+  background-color: tomato;
+}
+#divide {
+  grid-column: thirdCol;
+  grid-row: clearRow;
+  background-color: grey;
+  opacity: 80%;
+}
+#multiply {
+  grid-column: fourthCol;
+  grid-row: clearRow;
+  background-color: grey;
+  opacity: 80%;
+}
+#seven {
+  grid-column: firstCol;
+  grid-row: sevenRow;
+}
+#eight {
+  grid-column: secondCol;
+  grid-row: sevenRow;
+}
+#nine {
+  grid-column: thirdCol;
+  grid-row: sevenRow;
+}
+#minus {
+  grid-column: fourthCol;
+  grid-row: sevenRow;
+  background-color: grey;
+  opacity: 80%;
+}
+#four {
+  grid-column: firstCol;
+  grid-row: fourRow;
+}
+#five {
+  grid-column: secondCol;
+  grid-row: fourRow;
+}
+#six {
+  grid-column: thirdCol;
+  grid-row: fourRow;
+}
+#plus {
+  grid-column: fourthCol;
+  grid-row: fourRow;
+  background-color: grey;
+  opacity: 80%;
+}
+#one {
+  grid-column: firstCol;
+  grid-row: oneRow;
+}
+#two {
+  grid-column: secondCol;
+  grid-row: oneRow;
+}
+#three {
+  grid-column: thirdCol;
+  grid-row: oneRow;
+}
+#equal {
+  grid-column: fourthCol;
+  grid-row: oneRow/bottomRow;
+  background-color: skyblue;
+}
+#zero {
+  grid-column: firstCol/thirdCol;
+  grid-row: zeroRow;
+}
+#dot {
+  grid-column: thirdCol;
+  grid-row: zeroRow;
+}
+.header {
+  margin-top: 5%;
+  margin-bottom: 5%;
   text-align: center;
+  font-family: "Press Start 2P", cursive;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.credit {
+  margin-top: 5%;
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
 }
