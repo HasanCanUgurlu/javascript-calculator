@@ -15,7 +15,7 @@ button {
   font-family: "Press Start 2P", cursive;
 }
 button:hover {
-  opacity: 50%;
+  opacity: 0.9;
   background-color: black;
   color: aliceblue;
 }
@@ -23,21 +23,21 @@ button:hover {
   grid-row: bottomRow;
   grid-column: leftMostCol/-1;
   background-color: black;
-  opacity: 90%;
+  opacity: 0.9;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .spanForBackground2 {
   grid-row: calculation/-1;
   grid-column: leftMostCol;
   background-color: black;
-  opacity: 90%;
+  opacity: 0.9;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .spanForBackground3 {
   grid-row: calculation/-1;
   grid-column: rightMostCol;
   background-color: black;
-  opacity: 90%;
+  opacity: 0.9;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .calculator {
@@ -52,7 +52,7 @@ button:hover {
   grid-row: calculation/clearRow;
   grid-column: firstCol/rightMostCol;
   background-color: black;
-  opacity: 90%;
+  opacity: 0.9;
   text-align: right;
 }
 #currentCalculation {
@@ -70,13 +70,13 @@ button:hover {
   grid-column: thirdCol;
   grid-row: clearRow;
   background-color: grey;
-  opacity: 80%;
+  opacity: 0.8;
 }
 #multiply {
   grid-column: fourthCol;
   grid-row: clearRow;
   background-color: grey;
-  opacity: 80%;
+  opacity: 0.8;
 }
 #seven {
   grid-column: firstCol;
@@ -94,7 +94,7 @@ button:hover {
   grid-column: fourthCol;
   grid-row: sevenRow;
   background-color: grey;
-  opacity: 80%;
+  opacity: 0.8;
 }
 #four {
   grid-column: firstCol;
@@ -112,7 +112,7 @@ button:hover {
   grid-column: fourthCol;
   grid-row: fourRow;
   background-color: grey;
-  opacity: 80%;
+  opacity: 0.8;
 }
 #one {
   grid-column: firstCol;
